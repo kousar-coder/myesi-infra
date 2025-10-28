@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: myesi-selfsigned-cert
+  namespace: default
+spec:
+  secretName: myesi-tls
+  commonName: myesi.local
+  dnsNames:
+    - myesi.local
+  issuerRef:
+    name: selfsigned-issuer
+    kind: ClusterIssuer
