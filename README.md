@@ -1,2 +1,5 @@
-# myesi-infra
-Holds Helm charts, Kubernetes manifests, and GitOps/CD pipelines (ArgoCD or Flux) for automated deployment, monitoring, and observability (ELK or Grafana + Loki).
+### HTTPS / TLS Setup
+- Installed Cert-Manager using Helm.
+- Configured ClusterIssuer for Let's Encrypt (auto-renewal).
+- Created Ingress resource with TLS termination.
+- Verified HTTPS endpoint accessible via padlock icon.
