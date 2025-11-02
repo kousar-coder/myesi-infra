@@ -9,7 +9,7 @@ metadata:
 spec:
   tls:
   - hosts:
-      - myesi.local      
+      - myesi.local
     secretName: myesi-tls
   rules:
   - host: myesi.local
@@ -19,6 +19,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: myesi-service
+            name: myesi-service   
             port:
               number: 80

@@ -1,5 +1,10 @@
-### HTTPS / TLS Setup
-- Installed Cert-Manager using Helm.
-- Configured ClusterIssuer for Let's Encrypt (auto-renewal).
-- Created Ingress resource with TLS termination.
-- Verified HTTPS endpoint accessible via padlock icon.
+## 🔒 HTTPS (Self-Signed Certificate Setup)
+- Added self-signed `ClusterIssuer` for certificate management
+- Created TLS certificate for `myesi.local`
+- Configured NGINX ingress to use HTTPS
+
+### Apply Commands
+```bash
+kubectl apply -f cert-manager/cluster-issuer.yaml
+kubectl apply -f k8s-tls/selfsigned-certificate.yaml
+kubectl apply -f ingress/app-ingress.yaml
