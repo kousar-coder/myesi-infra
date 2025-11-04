@@ -1,3 +1,8 @@
+### HTTPS / TLS Setup
+- Installed Cert-Manager using Helm.
+- Configured ClusterIssuer for Let's Encrypt (auto-renewal).
+- Created Ingress resource with TLS termination.
+- Verified HTTPS endpoint accessible via padlock icon.
 ## CI/CD Workflows
 
 This repository uses **GitHub Actions** for continuous integration and deployment.
